@@ -6,16 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel='stylesheet' href='survey.css'>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
     <title>Friend Finder Survey</title>
 </head>
 <body>
-    <div class='container'>
-        <form>
-            <div class='form-group row text-center'>
-                <label>I like having new experiences</label>
-                <input class='form-check-input'>
+    <div class='row header'>
+        <div class='col-sm-12 header'>
+            <div class='header'>
+                <h1>Friend Finder Survey</h1>
+                <p>Answer the following 10 questions by choosing whether you agree or disagree with the question statement as it applies to you</p>
             </div>
-        </form>
+        </div>
     </div>
+    <hr>
+    <div class='container'>
+        
+        <div class='row'>
+            <div class='col-sm-12'>
+                <h2>Survey Questions</h2>
+                <hr>
+                <h3>
+                    <strong>About You</strong>
+                </h3>
+                <h4>Name (Required)</h4>
+                <input type='text' id='name' class='form-control' required>
+                <h4>Link to an image (Required)</h4>
+                <input type='text' id='image_link' class='form-control' required>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-12'>
+                <form>
+                        <div class='form-group'>
+                            <!-- <h2>Question 1</h2> -->
+                            <h4>Question 1</h4>
+                            <label for='question_1_input'>I like having new experiences</label>
+                            <!-- <h4>I like having new experiences</h4> -->
+                            <select class='form-control' id='question_1_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_2_input'>I would rather read a book than watch a movie</label>
+                            <select class='form-control' id='question_2_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_3_input'>I'm a fan of the horror genre</label>
+                            <select class='form-control' id='question_3_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_4_input'>I like going to see live music</label>
+                            <select class='form-control' id='question_4_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_5_input'>I like science-fiction</label>
+                            <select class='form-control' id='question_5_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_6_input'>I consider myself an outgoing individual</label>
+                            <select class='form-control' id='question_6_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_7_input'>I find it easy an fun to strike up conversation with new people</label>
+                            <select class='form-control' id='question_7_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_8_input'>I would rather go to a coffee shop for a first date than a bar</label>
+                            <select class='form-control' id='question_8_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_9_input'>My fist impressions of people stick</label>
+                            <select class='form-control' id='question_9_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <div class='form-group'>
+                            <label for='question_10_input'>I don't believe in tipping at restaurants</label>
+                            <select class='form-control' id='question_10_input' style='width: 200px'>
+                                <option>1 (strongly disagree) </option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 (strongly agree) </option>
+                            </select>
+                        </div>
+                        <input class='btn btn-primary btn-lg' id='survey_submit_btn' type='submit' value='Submit'></button>
+                    </form>
+            </div>  
+        </div>
+        
+    </div>
+    <script src='../data/friends.js'></script>
 </body>
 </html>

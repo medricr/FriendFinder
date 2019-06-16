@@ -1,4 +1,4 @@
-.parallax {
+/* .parallax {
     background-image: ulr('img.jpg');
 
     height: 500px;
@@ -7,4 +7,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+.body {
+    background-color: #FFA630;
 }
